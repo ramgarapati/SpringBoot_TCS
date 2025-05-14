@@ -8,6 +8,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/springpoc")
 public class CustomerManagementController {
 
     @Autowired
@@ -50,8 +51,7 @@ public class CustomerManagementController {
     @DeleteMapping("/deleteCustomer/{id}")
     public String deleteCustomerById(@PathVariable("id")
                                                Long id) {
-        customerService.deleteCustomerById(
+        return customerService.deleteCustomerById(
                 id);
-        return "Deleted Successfully";
     }
 }
