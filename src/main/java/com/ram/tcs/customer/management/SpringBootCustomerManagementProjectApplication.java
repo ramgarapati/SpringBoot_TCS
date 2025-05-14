@@ -1,0 +1,13 @@
+package com.ram.tcs.customer.management;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootCustomerManagementProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootCustomerManagementProjectApplication.class, args);
+	}
+
+}
